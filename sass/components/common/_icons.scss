@@ -50,3 +50,18 @@
     outline: transparent;
   }
 }
+
+
+// Menu icons
+
+.menu__icon--close {
+  display: none;
+
+  .menu-button.is-open & {
+    display: block;
+  }
+}
+
+.menu-button.is-open .menu__icon--open {
+  display: none;
+}

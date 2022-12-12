@@ -5,18 +5,41 @@
   background-color: var(--primary-bgc);
 
   &__wrap {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   &__social {
-    margin-left: 70px;
+    @media screen and (min-width: $mobile) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 70px;
+    }
+  }
+}
+
+.footer-location {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
   }
 }
 
 .address {
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    text-align: center;
+  }
 }
 
 .address__location {
@@ -64,12 +87,25 @@
   text-transform: uppercase;
 
   color: var(--wtite-color);
+
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+  }
 }
 
 // Subscribe
 
 .subscribe {
-  margin-left: auto;
+  // margin-left: auto;
+  // margin-right: auto;
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+  }
 
   &__title {
     margin-bottom: 20px;
@@ -80,18 +116,25 @@
     text-transform: uppercase;
 
     color: var(--wtite-color);
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      // text-align: center;
+    }
   }
 
   &__wrap {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
   }
 }
 
 .subscribe__input {
-  width: 358px;
-  height: 50px;
+  height: 100%;
   padding: 15px 16px;
 
   color: var(--wtite-color);
@@ -106,5 +149,14 @@
   &:focus {
     border-color: var(--accent-text-color);
     outline: transparent;
+  }
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
   }
 }

@@ -55,19 +55,21 @@
   }
 }
 
-// Modal button location
+// Menu button
 
-.modal--button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 // Subcribe button in footer
 
 .subscribe__button {
-  display: flex;
   position: relative;
+  display: flex;
 }
 
 .subscribe__icon {
@@ -77,6 +79,14 @@
   transform: translateY(-50%);
 
   fill: var(--wtite-color);
+}
+
+// Modal button location
+
+.modal--button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Close-button in modal
