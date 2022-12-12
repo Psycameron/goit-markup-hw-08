@@ -27,14 +27,26 @@ p {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
-// Hidden title 
+// Hidden title
 
 .visually-hidden {
   position: absolute;
@@ -49,5 +61,3 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-

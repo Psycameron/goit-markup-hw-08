@@ -1,11 +1,15 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .clients__item {
-  width: 170px;
   height: 92px;
+
+  @media screen and (min-width:$mobile) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .clients__link {
