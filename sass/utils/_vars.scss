@@ -1,0 +1,35 @@
+/* фирменный синий #2196F3 */
+/* фирменный черный #000000 */
+/* черный для заголовков  #212121 */
+/* белый для заголовков #FFFFFF */
+/* основной #757575 */
+/* белый прозрачный rgba(255, 255, 255, 0.6); */
+/* задник темный #2F303A; */
+/* задник серый #F5F4FA; */
+/* иконки в футере rgba(255, 255, 255, 0.1); */
+/* bgc для work rgba(47, 48, 58, 0.8) */
+/* прозрачный акцент rgba(33, 150, 243, 0.9); */
+/* bgc для модалки rgba(0, 0, 0, 0.2); */
+/* border close rgba(0, 0, 0, 0.1); */
+/* цвет placeholder rgba(117, 117, 117, 0.5); */
+
+/* переменная времени перехода cubic-bezier(0.4, 0, 0.2, 1); */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --primary-bgc: #2f303a;
+  --secondary-bgc: #f5f4fa;
+  --wtite-color: #ffffff;
+  --black-color: #000000;
+  --transparent-white: rgba(255, 255, 255, 0.6);
+  --clients-color: #afb1b8;
+  --footer-icon-color: rgba(255, 255, 255, 0.1);
+  --bgc-work-li: rgba(47, 48, 58, 0.8);
+  --portfolio-overlay: rgba(33, 150, 243, 0.9);
+  --bgc-modal: rgba(0, 0, 0, 0.2);
+  --border-close: rgba(0, 0, 0, 0.1);
+  --placeholder-color: rgba(117, 117, 117, 0.5);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
