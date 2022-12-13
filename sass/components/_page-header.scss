@@ -159,9 +159,11 @@
   }
 }
 
-// .contacts__item:last-child {
-//   margin-bottom: 32px;
-// }
+.contacts__item:last-child {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 32px;
+  } 
+}
 
 .contacts__link {
   font-weight: 500;
@@ -208,7 +210,6 @@
 }
 
 .menu-social__item {
-  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
