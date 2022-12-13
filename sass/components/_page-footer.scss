@@ -12,7 +12,7 @@
   }
 
   &__social {
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: calc($desktop - 1px)) {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 60px;
@@ -98,7 +98,7 @@
 
   color: var(--wtite-color);
 
-  @media screen and (min-width: $mobile) and (max-width: calc($desktop - 1px)) {
+  @media screen and (max-width: calc($desktop - 1px)) {
     text-align: center;
   }
 }
