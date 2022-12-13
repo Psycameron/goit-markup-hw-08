@@ -26,9 +26,9 @@
       screen and (-o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      .class {
-        background-image: url("../../../img/bgi/bgi-mobile-x2.jpg");
-      }
+      
+      background-image: url("../../../img/bgi/bgi-mobile-x2.jpg");
+      
     }
   }
 
@@ -38,9 +38,9 @@
       screen and (-o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      .class {
+      
         background-image: url("../../../img/bgi/bgi-tablet-x2.jpg");
-      }
+      
     }
   }
   
@@ -50,9 +50,9 @@
       screen and (-o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      .class {
+      
         background-image: url("../../../img/bgi/bgi-desktop-x2.jpg");
-      }
+      
     }
   }
 
