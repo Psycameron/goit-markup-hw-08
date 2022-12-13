@@ -825,6 +825,7 @@ p {
   top: 50%;
   left: 50%;
   min-width: 450px;
+  max-width: 528px;
   background-color: var(--wtite-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -847,8 +848,13 @@ p {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__field {
@@ -860,6 +866,16 @@ p {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
+}
+@media screen and (max-width: 1199px) {
+  .modal__field {
+    max-width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__field {
+    min-width: 448px;
+  }
 }
 
 .modal__input {
@@ -918,6 +934,16 @@ p {
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function);
 }
+@media screen and (max-width: 1199px) {
+  .textarea__input {
+    max-width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .textarea__input {
+    min-width: 448px;
+  }
+}
 .textarea__input:hover, .textarea__input:focus {
   cursor: pointer;
   border-color: var(--accent-text-color);
@@ -935,9 +961,15 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .policy__field {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy__input {
