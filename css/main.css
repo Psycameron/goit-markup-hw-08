@@ -959,6 +959,11 @@ p {
     line-height: 1.15;
   }
 }
+@media screen and (max-width: 1199px) {
+  .modal__title {
+    max-width: 370px;
+  }
+}
 
 .modal__field {
   position: relative;
@@ -970,6 +975,16 @@ p {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
+}
+@media screen and (max-width: 1199px) {
+  .modal__field {
+    max-width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__field {
+    min-width: 448px;
+  }
 }
 
 .modal__input {
@@ -1009,6 +1024,16 @@ p {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
+}
+@media screen and (max-width: 1199px) {
+  .modal__textarea {
+    max-width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__textarea {
+    min-width: 448px;
+  }
 }
 
 .textarea__input::placeholder {
