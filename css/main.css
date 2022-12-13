@@ -114,6 +114,13 @@ p {
   color: var(--wtite-color);
 }
 
+@media screen and (max-width: 767px) {
+  .page-header__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 .page-footer__logo {
   margin-bottom: 20px;
 }
@@ -164,6 +171,7 @@ p {
 }
 
 .menu-button {
+  right: 0;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -305,6 +313,11 @@ p {
 .page-header__wrap {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .page-header__wrap {
+    justify-content: space-between;
+  }
 }
 
 .menu__container {
