@@ -4,12 +4,14 @@
   color: var(--accent-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  //  для desktop 
-  // font-size: 26px;
+  font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    font-size: 24px;
+  }
 
   &--black-accent {
     color: var(--black-color);

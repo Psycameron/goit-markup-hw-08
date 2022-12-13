@@ -46,11 +46,11 @@
   display: block;
 
   @media screen and (max-width: calc($tablet - 1px)) {
-      &__item:not(:last-child) {
-        margin-bottom: 32px;
-      }
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
     }
-  
+  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     margin-left: 93px;
@@ -59,8 +59,6 @@
       position: relative;
       margin-left: 50px;
     }
-
-    
 
     &__item:first-child {
       margin-left: 0;
@@ -113,6 +111,11 @@
 
 .contacts {
   @media screen and (min-width: $tablet) {
+    display: block;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
     display: flex;
     margin-left: auto;
   }

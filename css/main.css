@@ -102,10 +102,15 @@ p {
   color: var(--accent-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+  }
 }
 .logo--black-accent {
   color: var(--black-color);
@@ -170,15 +175,17 @@ p {
   outline: transparent;
 }
 
-.menu-button {
-  right: 0;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+@media screen and (max-width: 767px) {
+  .menu-button {
+    right: 0;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -401,6 +408,12 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
     margin-left: auto;
@@ -799,7 +812,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 528px;
+  min-width: 450px;
   background-color: var(--wtite-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
