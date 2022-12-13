@@ -58,6 +58,8 @@
 // Menu button
 
 .menu-button {
+  z-index: 1;
+
   @media screen and (max-width: calc($tablet - 1px)) {
     right: 0;
     display: inline-flex;

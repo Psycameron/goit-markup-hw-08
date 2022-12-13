@@ -23,13 +23,13 @@
 
   @media screen and (max-width: calc($tablet - 1px)) {
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
 
     padding: 48px 40px;
 
-    height: 700px;
-    background-color: rgba(224, 207, 207, 0.5);
+    height: 796px;
+    background-color: var(--wtite-color);
   }
 
   @media screen and (min-width: $tablet) {
@@ -46,6 +46,8 @@
   display: block;
 
   @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 302px;
+
     &__item:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -68,9 +70,16 @@
 
 .site-nav__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
   color: var(--title-text-color);
 
   transition: color 250ms var(--timing-function);
@@ -110,6 +119,12 @@
 // Contacts
 
 .contacts {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+
   @media screen and (min-width: $tablet) {
     display: block;
     margin-left: auto;
@@ -133,12 +148,20 @@
   }
 
   &__icon {
+    @media screen and (max-width: calc($tablet - 1px)) {
+      display: none;
+    }
+
     @media screen and (min-width: $desktop) {
       margin-right: 10px;
       fill: currentColor;
     }
   }
 }
+
+// .contacts__item:last-child {
+//   margin-bottom: 32px;
+// }
 
 .contacts__link {
   font-weight: 500;
@@ -159,4 +182,58 @@
     display: flex;
     align-items: center;
   }
+
+  &--tel {
+    @media screen and (max-width: calc($tablet - 1px)) {
+      font-size: 34px;
+      line-height: 1.18;
+      color: var(--accent-text-color);
+    }
+  }
+
+  &--mail {
+    @media screen and (max-width: calc($tablet - 1px)) {
+      font-size: 24px;
+      line-height: 1.17;
+    }
+  }
 }
+
+.menu-social {
+  display: flex;
+
+  @media screen and (min-width:$tablet ) {
+      display: none;
+    }
+}
+
+.menu-social__item {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.menu-social__link:after {
+  position: absolute;
+  content: "";
+  display: flex;
+  right: -20px;
+  top: 50%;
+
+  width: 22px;
+  height: 0px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+
+  
+}
+
+
