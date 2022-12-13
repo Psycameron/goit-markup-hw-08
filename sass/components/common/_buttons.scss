@@ -63,6 +63,10 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: calc($tablet - 1px)) {
+    display: none;
+  }
 }
 
 // Subcribe button in footer

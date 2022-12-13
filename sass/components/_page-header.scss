@@ -1,4 +1,8 @@
 .page-header {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    position: relative;
+  }
+
   border-bottom: 1px solid #ececec;
   &__wrap {
     display: flex;
@@ -8,26 +12,58 @@
 
 // Site-nav
 
-.site-nav {
-  display: flex;
-  margin-left: 93px;
+.menu__container {
+  display: none;
+  width: 100%;
 
-  &__item {
-    position: relative;
-    margin-left: 50px;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    padding: 48px 40px;
+
+    height: 700px;
+    background-color: rgba(224, 207, 207, 0.5);
   }
 
-  &__item:first-child {
-    margin-left: 0;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.site-nav {
+  display: block;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+      &__item:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+  
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 93px;
+
+    &__item {
+      position: relative;
+      margin-left: 50px;
+    }
+
+    
+
+    &__item:first-child {
+      margin-left: 0;
+    }
   }
 }
 
 .site-nav__link {
-  display: block;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -41,48 +77,62 @@
     color: var(--accent-text-color);
   }
 
-  &--current::after {
-    position: absolute;
-    bottom: -1px;
-
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-
-    background-color: var(--accent-text-color);
-    border-radius: 2px;
-  }
-
   &--current {
     color: var(--accent-text-color);
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &--current::after {
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      bottom: -1px;
+
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+
+      background-color: var(--accent-text-color);
+      border-radius: 2px;
+    }
   }
 }
 
 // Contacts
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: auto;
+  }
 
   &__item {
-    margin-left: 50px;
+    @media screen and (min-width: $desktop) {
+      margin-left: 50px;
+    }
   }
 
   &__item:first-child {
-    margin-left: 0;
+    @media screen and (min-width: $desktop) {
+      margin-left: 0;
+    }
   }
 
   &__icon {
-    margin-right: 10px;
-    fill: currentColor;
+    @media screen and (min-width: $desktop) {
+      margin-right: 10px;
+      fill: currentColor;
+    }
   }
 }
 
 .contacts__link {
-  display: flex;
-  align-items: center;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -95,5 +145,10 @@
   &:hover,
   &:focus {
     color: var(--accent-text-color);
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
   }
 }
