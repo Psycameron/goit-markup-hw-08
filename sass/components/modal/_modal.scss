@@ -3,7 +3,10 @@
   top: 50%;
   left: 50%;
 
-  min-width: 450px;
+  @media screen and (min-width:$mobile) and (max-width: calc($desktop - 1px)){
+    min-width: 450px;
+  }
+  
   max-width: 528px;
 
   background-color: var(--wtite-color);
