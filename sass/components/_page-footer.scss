@@ -164,6 +164,6 @@
 
   @media screen and (max-width: calc($desktop - 1px)){
     margin-bottom: 20px;
-    width: 450px;
+    flex-basis: 450px;
   }
 }

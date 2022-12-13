@@ -516,18 +516,8 @@ p {
 }
 .menu-social__item:not(:last-child) {
   margin-right: 20px;
-}
-
-.menu-social__link:after {
-  position: absolute;
-  content: "";
-  display: flex;
-  right: -20px;
-  top: 50%;
-  width: 22px;
-  height: 0px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+  padding-right: 17px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .hero {
@@ -883,7 +873,7 @@ p {
 @media screen and (max-width: 1199px) {
   .subscribe__input {
     margin-bottom: 20px;
-    width: 450px;
+    flex-basis: 450px;
   }
 }
 
