@@ -671,22 +671,28 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .footer-location {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .location__social {
+    display: flex;
   }
 }
 
-.address {
-  display: flex;
-  flex-direction: column;
+@media screen and (max-width: 1199px) {
+  .footer-location {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
+
 @media screen and (max-width: 1199px) {
   .address {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 232px;
   }
 }
 
