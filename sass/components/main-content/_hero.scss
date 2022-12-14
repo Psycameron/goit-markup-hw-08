@@ -14,19 +14,22 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../../img/bgi/bgi-mobile-x1.jpg");
+    url("../../../img/bgi/bgi-desktop-x2.jpg");
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     @media screen and (min-device-pixel-ratio: 2),
       screen and (--webkit-min-device-pixel-ratio: 2),
       screen and (-o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url("../../../img/bgi/bgi-mobile-x2.jpg");
+      background-image: linear-gradient(to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+      url("../../../img/bgi/bgi-mobile-x2.jpg");
     }
   }
 
@@ -36,7 +39,10 @@
       screen and (-o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url("../../../img/bgi/bgi-tablet-x2.jpg");
+      background-image: linear-gradient(to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+      url("../../../img/bgi/bgi-tablet-x2.jpg");
     }
   }
 
@@ -46,7 +52,10 @@
       screen and (-o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url("../../../img/bgi/bgi-desktop-x2.jpg");
+      background-image:linear-gradient(to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+      url("../../../img/bgi/bgi-desktop-x2.jpg");
     }
   }
 
