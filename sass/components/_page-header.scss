@@ -17,16 +17,22 @@
 
 // Site-nav
 
+.nav {
+  margin-bottom: auto;
+}
+
 .menu__container {
   display: none;
   width: 100%;
   height: 100%;
 
   @media screen and (max-width: calc($tablet - 1px)) {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    height: 790px;
+    height: 100%;
+    // display: flex;
+    // flex-direction: column;
 
     padding: 48px 40px;
 
@@ -34,7 +40,6 @@
   }
 
   @media screen and (min-width: $tablet) {
-    
     display: flex;
     align-items: center;
   }
@@ -48,8 +53,6 @@
   display: block;
 
   @media screen and (max-width: calc($tablet - 1px)) {
-    margin-bottom: 302px;
-
     &__item:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -164,7 +167,7 @@
 .contacts__item:last-child {
   @media screen and (max-width: calc($tablet - 1px)) {
     margin-bottom: 32px;
-  } 
+  }
 }
 
 .contacts__link {
@@ -189,7 +192,7 @@
 
   &--tel {
     @media screen and (max-width: calc($tablet - 1px)) {
-      font-size: 34px;
+      font-size: 8vw;
       line-height: 1.18;
       color: var(--accent-text-color);
     }
@@ -205,13 +208,16 @@
 
 .menu-social {
   display: flex;
+  flex-wrap: wrap;
 
-  @media screen and (min-width:$tablet ) {
-      display: none;
-    }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .menu-social__item {
+  flex-basis: calc((100% - 3 * 20px) / 4);
+
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
