@@ -466,6 +466,11 @@ p {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .contacts__icon {
+    fill: currentColor;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts__icon {
     margin-right: 10px;
@@ -521,8 +526,10 @@ p {
 }
 
 .menu-social__item {
-  flex-basis: calc((100% - 60px) / 4);
-  padding: 5px 0;
+  max-width: 95px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -531,7 +538,6 @@ p {
 }
 .menu-social__item:not(:last-child) {
   margin-right: 20px;
-  padding-right: 5%;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 

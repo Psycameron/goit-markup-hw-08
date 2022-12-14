@@ -167,6 +167,10 @@
       display: none;
     }
 
+    @media screen and (min-width:$tablet) {
+      fill: currentColor;
+    }
+
     @media screen and (min-width: $desktop) {
       margin-right: 10px;
       fill: currentColor;
@@ -226,8 +230,11 @@
 }
 
 .menu-social__item {
-  flex-basis: calc((100% - 3 * 20px) / 4);
-  padding: 5px 0;
+  // flex-basis: calc((100% - 3 * 20px) / 4);
+  max-width: 95px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
 
   font-weight: 500;
   font-size: 18px;
@@ -237,7 +244,7 @@
 
   &:not(:last-child) {
     margin-right: 20px;
-    padding-right: 5%;
+    
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
