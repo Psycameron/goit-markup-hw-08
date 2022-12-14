@@ -18,7 +18,9 @@
 // Site-nav
 
 .nav {
-  margin-bottom: auto;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 350px;
+  }
 }
 
 .menu__container {
@@ -29,17 +31,16 @@
   @media screen and (max-width: calc($tablet - 1px)) {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    
 
     padding: 48px 40px;
 
     background-color: var(--wtite-color);
 
     overflow: auto;
-    transform: translateX(50%);
+    transform: translateX(0%);
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
   }
@@ -53,7 +54,7 @@
     display: block;
   }
   
-  position: absolute;
+  
   
 }
 
@@ -234,7 +235,7 @@
 
   &:not(:last-child) {
     margin-right: 20px;
-    padding-right: 17px;
+    padding-right: 5%;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
