@@ -526,10 +526,6 @@ p {
 }
 
 .menu-social__item {
-  max-width: 95px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 15px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -537,7 +533,8 @@ p {
   color: var(--accent-text-color);
 }
 .menu-social__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
